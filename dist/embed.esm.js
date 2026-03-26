@@ -1,4 +1,4 @@
-/* nihonshufyi-embed v1.0.0 | MIT | https://widget.nihonshufyi.com */
+/* nihonshufyi-embed v1.1.0 | MIT | https://widget.nihonshufyi.com */
 
 // src/styles/modern.ts
 function getModernCSS() {
@@ -137,6 +137,73 @@ function getModernCSS() {
   border-top: 1px solid var(--border);
   gap: 8px;
 }
+
+/* \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
+   Card shared: stats row (horizontal flex)
+   \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 */
+.drinkfyi-stats-row { display:flex; gap:12px; padding:10px 18px; border-bottom:1px solid var(--border); }
+.drinkfyi-stat { text-align:center; flex:1; }
+.drinkfyi-stat-value { font-size:18px; font-weight:700; color:var(--accent); }
+.drinkfyi-stat-label { font-size:9px; color:var(--muted); text-transform:uppercase; letter-spacing:0.03em; }
+
+/* Card shared: stats grid (2x2 boxes) */
+.drinkfyi-stats-grid { display:grid; grid-template-columns:1fr 1fr; gap:8px; padding:10px 18px; border-bottom:1px solid var(--border); }
+.drinkfyi-stat-box { padding:6px 8px; background:color-mix(in srgb, var(--accent) 8%, var(--bg)); border-radius:8px; }
+.drinkfyi-stat-box-label { font-size:9px; color:color-mix(in srgb, var(--accent) 80%, var(--text)); text-transform:uppercase; }
+.drinkfyi-stat-box-value { font-size:13px; font-weight:700; color:var(--text); margin-top:1px; }
+
+/* Card shared: key-value dotted rows */
+.drinkfyi-kv-rows { padding:10px 18px; border-bottom:1px solid var(--border); }
+.drinkfyi-kv-row { display:flex; justify-content:space-between; align-items:baseline; padding:4px 0; border-bottom:1px dotted var(--border); }
+.drinkfyi-kv-row:last-child { border-bottom:none; }
+.drinkfyi-kv-label { font-size:11px; color:var(--muted); }
+.drinkfyi-kv-value { font-size:11px; font-weight:600; color:var(--text); }
+
+/* Card shared: pill tags */
+.drinkfyi-pills { display:flex; flex-wrap:wrap; gap:4px; padding:10px 18px; border-bottom:1px solid var(--border); }
+.drinkfyi-pill { padding:2px 8px; border-radius:10px; font-size:11px; font-weight:500; background:color-mix(in srgb, var(--accent) 10%, var(--bg)); color:var(--accent); }
+
+/* Card shared: section label */
+.drinkfyi-section-label { font-size:10px; text-transform:uppercase; letter-spacing:0.05em; color:var(--accent); font-weight:600; margin-bottom:3px; }
+
+/* Card shared: description */
+.drinkfyi-desc { padding:10px 18px; font-size:11px; color:var(--muted); line-height:1.5; border-bottom:1px solid var(--border); }
+
+/* Card shared: view link */
+.drinkfyi-view-link { display:block; text-align:center; padding:10px 18px; border-bottom:1px solid var(--border); }
+.drinkfyi-view-link a { color:var(--link); text-decoration:none; font-size:12px; font-weight:500; display:inline-flex; align-items:center; gap:4px; }
+.drinkfyi-view-link a:hover { text-decoration:underline; }
+.drinkfyi-view-link svg { width:12px; height:12px; }
+
+/* \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
+   Card domain: spectrum bar (SRM, oxidation)
+   \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 */
+.drinkfyi-spectrum { padding:12px 18px; border-bottom:1px solid var(--border); }
+.drinkfyi-spectrum-label { font-size:10px; text-transform:uppercase; letter-spacing:0.05em; color:var(--muted); font-weight:600; margin-bottom:6px; }
+.drinkfyi-spectrum-bar { height:14px; border-radius:7px; position:relative; }
+.drinkfyi-spectrum-pointer { position:absolute; top:-3px; width:3px; height:20px; background:var(--text); border-radius:2px; }
+.drinkfyi-spectrum-labels { display:flex; justify-content:space-between; font-size:8px; color:var(--muted); margin-top:3px; }
+
+/* Card domain: tasting notes (whiskey) */
+.drinkfyi-tasting { padding:10px 18px; border-bottom:1px solid var(--border); }
+.drinkfyi-tasting-item { margin-bottom:8px; }
+.drinkfyi-tasting-item:last-child { margin-bottom:0; }
+.drinkfyi-tasting-label { font-size:10px; text-transform:uppercase; letter-spacing:0.05em; color:var(--accent); font-weight:600; margin-bottom:2px; }
+.drinkfyi-tasting-text { font-size:11px; color:var(--muted); line-height:1.4; }
+
+/* Card domain: polishing ratio circle (nihonshu) */
+.drinkfyi-polish { padding:14px 18px; text-align:center; border-bottom:1px solid var(--border); }
+.drinkfyi-polish-label { font-size:10px; text-transform:uppercase; letter-spacing:0.05em; color:var(--muted); font-weight:600; margin-bottom:8px; }
+.drinkfyi-polish-outer { width:80px; height:80px; border-radius:50%; background:color-mix(in srgb, var(--accent) 12%, var(--bg)); display:flex; align-items:center; justify-content:center; margin:0 auto; }
+.drinkfyi-polish-inner { border-radius:50%; background:var(--accent); display:flex; align-items:center; justify-content:center; color:#fff; font-size:11px; font-weight:700; }
+.drinkfyi-polish-note { font-size:10px; color:var(--muted); margin-top:4px; }
+
+/* Card domain: wine color swatch (vino) */
+.drinkfyi-wine-color { display:flex; align-items:center; gap:10px; padding:12px 18px; border-bottom:1px solid var(--border); }
+.drinkfyi-wine-swatch { width:28px; height:28px; border-radius:50%; border:2px solid var(--border); flex-shrink:0; }
+.drinkfyi-wine-info { font-size:11px; }
+.drinkfyi-wine-type { font-weight:600; }
+.drinkfyi-wine-detail { color:var(--muted); font-size:10px; }
   `;
 }
 
@@ -289,6 +356,82 @@ function getClassicCSS() {
   padding: 10px 20px;
   border-top: 1px solid var(--border);
   gap: 8px;
+}
+
+/* \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
+   Classic overrides for card shared components
+   \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 */
+
+/* Stat values: serif, use text color instead of accent */
+.drinkfyi-stat-value {
+  font-family: Georgia, 'Times New Roman', serif;
+  color: var(--text);
+}
+
+/* Stat boxes: border outline instead of filled background */
+.drinkfyi-stat-box {
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+
+.drinkfyi-stat-box-label {
+  font-variant: small-caps;
+  text-transform: lowercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+
+/* Section labels: small-caps + serif */
+.drinkfyi-section-label {
+  font-variant: small-caps;
+  text-transform: lowercase;
+  letter-spacing: 0.06em;
+  font-family: Georgia, 'Times New Roman', serif;
+  color: var(--muted);
+}
+
+/* Tasting notes: italic serif */
+.drinkfyi-tasting-text {
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+.drinkfyi-tasting-label {
+  font-variant: small-caps;
+  text-transform: lowercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+
+/* Pills: border outline instead of filled */
+.drinkfyi-pill {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+/* Polish label: serif small-caps */
+.drinkfyi-polish-label {
+  font-variant: small-caps;
+  text-transform: lowercase;
+  letter-spacing: 0.06em;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+/* Spectrum label: serif small-caps */
+.drinkfyi-spectrum-label {
+  font-variant: small-caps;
+  text-transform: lowercase;
+  letter-spacing: 0.06em;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+/* KV rows: already dotted in base, ensure classic styling */
+.drinkfyi-kv-label {
+  font-variant: small-caps;
+  text-transform: lowercase;
+  letter-spacing: 0.06em;
 }
   `;
 }
@@ -781,6 +924,10 @@ function injectFAQPage(data, domain, siteName) {
 }
 
 // src/widgets/recipe.ts
+var _siteCardRenderer = null;
+function setSiteCardRenderer(fn) {
+  _siteCardRenderer = fn;
+}
 function escapeHTML(str) {
   return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#39;");
 }
@@ -833,6 +980,7 @@ function initRecipeWidget(el, config) {
   var _a;
   const dataset = el.dataset;
   const slug = (_a = dataset.slug) != null ? _a : "";
+  const lang = dataset.lang;
   if (!slug) {
     const shadow2 = createShadow(el, config);
     const container2 = createWidgetRoot(shadow2, el);
@@ -843,8 +991,12 @@ function initRecipeWidget(el, config) {
   const container = createWidgetRoot(shadow, el);
   renderLoading(container);
   const apiPath = `${config.entitySlug}/${slug}/`;
-  fetchAPI(config.apiBase, apiPath).then((data) => {
-    renderRecipe(container, data, slug, config, el);
+  fetchAPI(config.apiBase, apiPath, lang ? { lang } : void 0).then((data) => {
+    if (_siteCardRenderer) {
+      _siteCardRenderer(container, data, config, lang);
+    } else {
+      renderRecipe(container, data, slug, config, el);
+    }
   }).catch(() => {
     renderError(
       container,
@@ -913,6 +1065,101 @@ function renderRecipe(container, data, slug, config, el) {
       config.domain
     );
   }
+}
+
+// src/cards/shared.ts
+function esc(str) {
+  return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+}
+function cardHeader(title, subtitle) {
+  return `
+    <div class="drinkfyi-header">
+      <div>
+        <p class="drinkfyi-header-title">${esc(title)}</p>
+        ${subtitle ? `<p class="drinkfyi-header-subtitle">${esc(subtitle)}</p>` : ""}
+      </div>
+    </div>`;
+}
+function statsRow(stats) {
+  if (!stats.length) return "";
+  const items = stats.map(
+    (s) => `
+      <div class="drinkfyi-stat">
+        <div class="drinkfyi-stat-value">${esc(s.value)}</div>
+        <div class="drinkfyi-stat-label">${esc(s.label)}</div>
+      </div>`
+  ).join("");
+  return `<div class="drinkfyi-stats-row">${items}</div>`;
+}
+function kvRows(rows) {
+  if (!rows.length) return "";
+  const items = rows.filter((r) => r.value).map(
+    (r) => `
+      <div class="drinkfyi-kv-row">
+        <span class="drinkfyi-kv-label">${esc(r.label)}</span>
+        <span class="drinkfyi-kv-value">${esc(r.value)}</span>
+      </div>`
+  ).join("");
+  return items ? `<div class="drinkfyi-kv-rows">${items}</div>` : "";
+}
+function viewLink(url, _domain, name) {
+  return `
+    <div class="drinkfyi-view-link">
+      <a href="${esc(url)}" target="_blank" rel="noopener">
+        View on ${esc(name)} ${externalLinkIcon}
+      </a>
+    </div>`;
+}
+
+// src/cards/nihonshu-card.ts
+function polishingCircle(ratio) {
+  if (ratio <= 0 || ratio > 100) return "";
+  const innerSize = Math.max(20, Math.round(ratio * 0.7));
+  return `
+    <div class="drinkfyi-polish">
+      <div class="drinkfyi-polish-label">Rice Polishing Ratio</div>
+      <div class="drinkfyi-polish-outer">
+        <div class="drinkfyi-polish-inner" style="width:${innerSize}px;height:${innerSize}px;">
+          ${ratio}%
+        </div>
+      </div>
+      <div class="drinkfyi-polish-note">${ratio}% of rice grain remaining</div>
+    </div>`;
+}
+function renderNihonshuCard(container, data, config, _lang) {
+  var _a, _b, _c, _d, _e, _f;
+  const name = String((_a = data.name) != null ? _a : "");
+  const japaneseName = String((_b = data.japanese_name) != null ? _b : "");
+  const brewery = String((_c = data.brewery_name) != null ? _c : "");
+  const grade = String((_d = data.grade_name) != null ? _d : "");
+  const rice = String((_e = data.rice_name) != null ? _e : "");
+  const polishing = data.polishing_ratio != null ? parseFloat(String(data.polishing_ratio)) : 0;
+  const abv = data.abv ? `${data.abv}%` : "";
+  const smv = data.smv != null ? String(data.smv) : "";
+  const acidity = data.acidity != null ? String(data.acidity) : "";
+  const amino = data.amino_acid != null ? String(data.amino_acid) : "";
+  const url = String((_f = data.url) != null ? _f : `https://${config.domain}/${config.entitySlug}/`);
+  const title = japaneseName || name;
+  const subtitle = japaneseName ? name : "";
+  const stats = [
+    abv ? { value: abv, label: "ABV" } : null,
+    smv ? { value: smv, label: "SMV" } : null,
+    acidity ? { value: acidity, label: "Acidity" } : null,
+    amino ? { value: amino, label: "Amino" } : null
+  ].filter((s) => s !== null);
+  const kvData = [
+    { label: "Grade", value: grade },
+    { label: "Rice", value: rice },
+    { label: "Brewery", value: brewery }
+  ];
+  container.innerHTML = [
+    cardHeader(title, subtitle),
+    polishing > 0 ? polishingCircle(polishing) : "",
+    statsRow(stats),
+    kvRows(kvData),
+    viewLink(url, config.domain, config.name),
+    poweredByHTML(config)
+  ].join("");
 }
 
 // src/widgets/compare.ts
@@ -1588,6 +1835,7 @@ function initSearchWidget(el, config) {
 }
 
 // src/_entry_nihonshufyi.ts
+setSiteCardRenderer(renderNihonshuCard);
 function initWidget(el, type, config) {
   const widgetStyle = el.dataset.style || "modern";
   switch (type) {
