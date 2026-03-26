@@ -1,0 +1,43 @@
+{
+  "name": "nihonshufyi-embed",
+  "version": "1.0.0",
+  "description": "Embed NihonshuFYI sake widgets — sake grades, rice varieties, polishing ratios, breweries. Zero dependencies, Shadow DOM, 4 themes.",
+  "main": "dist/embed.min.js",
+  "module": "dist/embed.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "sake",
+    "nihonshu",
+    "rice-wine",
+    "junmai",
+    "daiginjo",
+    "brewery",
+    "polishing",
+    "embed",
+    "widget",
+    "nihonshufyi",
+    "nihonshufyi.com",
+    "shadow-dom",
+    "zero-dependencies",
+    "fyipedia",
+    "drinkfyi"
+  ],
+  "homepage": "https://widget.nihonshufyi.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fyipedia/nihonshufyi-embed"
+  },
+  "bugs": {
+    "url": "https://github.com/fyipedia/nihonshufyi-embed/issues"
+  },
+  "license": "MIT",
+  "author": "FYIPedia <dev@fyipedia.com>",
+  "publishConfig": {
+    "access": "public"
+  }
+}
