@@ -1,6 +1,6 @@
 {
   "name": "nihonshufyi-embed",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Embed NihonshuFYI sake widgets — sake grades, rice varieties, polishing ratios, breweries. Zero dependencies, Shadow DOM, 4 themes.",
   "main": "dist/embed.min.js",
   "module": "dist/embed.esm.js",

@@ -1,4 +1,4 @@
-/* nihonshufyi-embed v1.1.1 | MIT | https://widget.nihonshufyi.com */
+/* nihonshufyi-embed v1.1.2 | MIT | https://widget.nihonshufyi.com */
 
 // src/styles/modern.ts
 function getModernCSS() {
@@ -204,6 +204,8 @@ function getModernCSS() {
 .drinkfyi-wine-info { font-size:11px; }
 .drinkfyi-wine-type { font-weight:600; }
 .drinkfyi-wine-detail { color:var(--muted); font-size:10px; }
+/* Mini flavor radar */
+.drinkfyi-radar { padding:10px 18px; text-align:center; border-bottom:1px solid var(--border); }
   `;
 }
 
