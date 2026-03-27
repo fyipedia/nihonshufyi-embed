@@ -1,4 +1,4 @@
-/* nihonshufyi-embed v1.1.0 | MIT | https://widget.nihonshufyi.com */
+/* nihonshufyi-embed v1.1.1 | MIT | https://widget.nihonshufyi.com */
 
 // src/styles/modern.ts
 function getModernCSS() {
