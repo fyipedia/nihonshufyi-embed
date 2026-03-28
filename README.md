@@ -43,7 +43,7 @@ That's it. The widget fetches data from the NihonshuFYI API and renders with ful
 | `data-nihonshufyi` | recipe, compare, glossary, faq, guide, ingredient, pairing, search | required | Widget type |
 | `data-slug` | e.g. "sake" | — | Entity slug from the NihonshuFYI database |
 | `data-theme` | light, dark, sepia, auto | light | Visual theme (`auto` follows OS preference) |
-| `data-style` | modern, classic | modern | Widget design style |
+| `data-styleVariant` | modern, classic | modern | Widget design style |
 | `data-size` | default, compact, large | default | Widget size |
 | `data-placeholder` | any string | "Search Sake..." | Search box placeholder |
 
