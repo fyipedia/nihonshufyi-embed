@@ -1,21 +1,52 @@
 # NihonshuFYI Embed Widget
 
-> Embeddable NihonshuFYI widgets for any website. Zero dependencies, Shadow DOM isolation, 4 themes (light/dark/sepia/auto).
+> 80 sake, rice varieties, 50 breweries. Embeddable widgets for any website. Zero dependencies, Shadow DOM isolation.
 
 ## Quick Start
 
-Add to any HTML page:
-- Script: <script src="https://cdn.jsdelivr.net/npm/nihonshufyi-embed@1/dist/embed.min.js"></script>
+```html
+<script src="https://cdn.jsdelivr.net/npm/nihonshufyi-embed@1/dist/embed.min.js"></script>
+<div data-nihonshufyi="recipe" data-slug="example"></div>
+```
+
+## Available Widget Types (8)
+
+- recipe: `data-nihonshufyi="recipe"`
+- compare: `data-nihonshufyi="compare"`
+- glossary: `data-nihonshufyi="glossary"`
+- faq: `data-nihonshufyi="faq"`
+- guide: `data-nihonshufyi="guide"`
+- ingredient: `data-nihonshufyi="ingredient"`
+- pairing: `data-nihonshufyi="pairing"`
+- search: `data-nihonshufyi="search"`
+
+## Customization
+
+- **Themes**: light, dark, sepia, auto (follows system preference)
+- **Sizes**: compact (280px), default (420px), large (720px)
+- **Styles**: modern, classic
+
+```html
+<div data-nihonshufyi="recipe" data-slug="example"
+     data-theme="auto" data-size="compact" data-style-variant="modern"></div>
+```
+
+## Integration Methods
+
+1. **Script tag** (recommended): `<script src="https://cdn.jsdelivr.net/npm/nihonshufyi-embed@1/dist/embed.min.js"></script>`
+2. **iframe**: `https://nihonshufyi.com/iframe/entity/{slug}/`
+3. **oEmbed**: `https://nihonshufyi.com/oembed?url={page_url}&format=json`
+4. **Badge**: `https://nihonshufyi.com/badge/site.svg`
 
 ## Links
 
 - Main site: https://nihonshufyi.com
 - Widget docs: https://widget.nihonshufyi.com
-- npm: https://www.npmjs.com/package/nihonshufyi-embed
+- API documentation: https://nihonshufyi.com/developers/
+- npm package: https://www.npmjs.com/package/nihonshufyi-embed
 - GitHub: https://github.com/fyipedia/nihonshufyi-embed
-- API: https://nihonshufyi.com/developers/
 
-## Beverage FYI Widget Family
+## Beverage FYI Widget Network
 
 - [CocktailFYI Widget](https://widget.cocktailfyi.com)
 - [VinoFYI Widget](https://widget.vinofyi.com)
