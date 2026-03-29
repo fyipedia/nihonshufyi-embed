@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# NihonshuFYI Embed Widget
+# Main site: https://nihonshufyi.com
+# Widget docs: https://widget.nihonshufyi.com
+# npm: https://www.npmjs.com/package/nihonshufyi-embed
