@@ -1,0 +1,30 @@
+# NihonshuFYI Embed Widget
+
+> Embeddable NihonshuFYI widgets for any website. Zero dependencies, Shadow DOM isolation, 4 themes (light/dark/sepia/auto).
+
+## Quick Start
+
+Add to any HTML page:
+- Script: <script src="https://cdn.jsdelivr.net/npm/nihonshufyi-embed@1/dist/embed.min.js"></script>
+
+## Links
+
+- Main site: https://nihonshufyi.com
+- Widget docs: https://widget.nihonshufyi.com
+- npm: https://www.npmjs.com/package/nihonshufyi-embed
+- GitHub: https://github.com/fyipedia/nihonshufyi-embed
+- API: https://nihonshufyi.com/developers/
+
+## Beverage FYI Widget Family
+
+- [CocktailFYI Widget](https://widget.cocktailfyi.com)
+- [VinoFYI Widget](https://widget.vinofyi.com)
+- [BeerFYI Widget](https://widget.beerfyi.com)
+- [BrewFYI Widget](https://widget.brewfyi.com)
+- [WhiskeyFYI Widget](https://widget.whiskeyfyi.com)
+- [TeaFYI Widget](https://widget.teafyi.com)
+- [DrinkFYI Widget](https://widget.drinkfyi.com)
+
+## Part of FYIPedia
+
+Open-source developer tools ecosystem — https://fyipedia.com
